@@ -1,10 +1,14 @@
 # Janna Jilesen & Stefan van Dam
 # 7 January 2014
 
-# loading libraries
+# Import Packages
+# No packages needed for this exercise
 
-# loading functions
-source('R/leap.R')
+# Source functions
+source('R/leapYearTester.R')
 
-leap(2000)
-
+#Examples of leap year, common year and string
+leapYearTester(2000)
+leapYearTester(2001)
+leapYearTester('john')
+leapYearTester(2001.11)
