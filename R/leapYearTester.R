@@ -3,13 +3,13 @@ leapYearTester <- function(x) {
   # x (numeric) is a year to test
   if (is.numeric(x) & x%%1==0) { # tests if x is numeric ánd if x is a whole number
     if (!x%%4==0) { # these else if statements tests if a year is a leap year
-      message <- sprintf('%d is a common year',x)
+      message <- F
     } else if (!x%%100 == 0) {
-      message <- sprintf('%d is a leap year', x) 
+      message <- T
     } else if (!x%%400 == 0) {
-      message <- sprintf('%d is a common year',x)
+      message <- F
     } else {
-      message <- sprintf('%d is a leap year', x) 
+      message <- T
     }
   } else {
     message <- sprintf('You must fill in a whole number!')
